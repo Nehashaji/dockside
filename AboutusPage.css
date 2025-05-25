@@ -1,0 +1,505 @@
+/* Reset and Base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  background-color: white;
+  color: #000018;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 80px;
+}
+
+/* Nav Links */
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #010022;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  background-color: #053d00;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #053d00;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('About_Images/abouthero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px; /* Space below fixed navbar */
+}
+
+.hero .overlay {
+  background-color: rgba(0, 36, 80, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 20px;
+  background-color: white;
+}
+
+.intro-container,
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.intro-text,
+.values-text {
+  flex: 1 1 500px;
+}
+
+.intro-image img,
+.values-image img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.intro-text h2,
+.values-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro-text p,
+.values-text p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Features List */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.features i {
+  color: #00467f;
+  margin-right: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-left: 5px solid #00467f;
+  border-radius: 8px;
+}
+
+.founder .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.founder .title {
+  font-size: 14px;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.emergency {
+  font-size: 15px;
+}
+
+.phone {
+  font-weight: bold;
+  color: #00467f;
+  margin-top: 5px;
+}
+
+.dark-banner {
+  background-color: #0b1437;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  min-height: 50px;
+}
+
+
+/* Values (Vision & Mission) Section */
+.values-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.values-image {
+  flex: 1 1 450px;
+  text-align: center;
+}
+
+.values-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.values-text {
+  flex: 1 1 500px;
+}
+
+.values-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0b1437;
+}
+
+.values-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vision-mission .block {
+  background: #f0f4f8;
+  padding: 20px;
+  border-left: 4px solid #00467f;
+  border-radius: 8px;
+}
+
+.vision-mission h3 {
+  font-size: 20px;
+  color: #00467f;
+  margin-bottom: 10px;
+}
+
+.vision-mission i {
+  margin-right: 8px;
+  color: #00467f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .values-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-mission {
+    align-items: center;
+  }
+
+  .vision-mission .block {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Meet Our Team Section */
+
+#meet-the-team {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto 80px auto;
+}
+
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b1437; /* dark navy blue */
+  margin-bottom: 15px;
+  font-family: 'Merriweather', serif;
+}
+
+.team-description {
+  font-size: 18px;
+  color: #010022;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  font-family: 'Merriweather', serif;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  border: 5px solid #0b1437; /* thick dark navy blue outline */
+  padding: 20px;
+  width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f9faff;
+  box-shadow: 0 4px 10px rgba(11, 20, 55, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(11, 20, 55, 0.25);
+}
+
+.team-photo {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0px;
+
+}
+
+.member-name {
+  font-size: 22px;
+  color: #0b1437;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+}
+
+.member-role {
+  font-size: 16px;
+  color: #053d00;
+  font-weight: 600;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 700px) {
+  .team-members {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* === GET IN TOUCH SECTION === */
+.contact-section {
+  background-color: #0a122a;
+  color: white;
+  padding: 5rem 1.5rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem auto;
+}
+
+.contact-image img {
+  max-width: 370px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.contact-details {
+  max-width: 500px;
+}
+
+.contact-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-details i {
+  margin-right: 0.75rem;
+  color: #ffd700;
+  min-width: 20px;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.info-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-section .slogan {
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: #ccc;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.info-section h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.info-section p {
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #133f01;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #050a1f;
+  padding: 1.5rem;
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.footer-links a,
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

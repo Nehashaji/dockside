@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="ContactusPage.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Akatab&family=Merriweather&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down" data-aos-delay="100">
+    <div class="container">
+      <img src="Images/logo.png" alt="Dockside Logo" class="logo" />
+      <nav class="nav-links">
+        <a href="HomePage.html">Home</a>
+        <a href="AboutusPage.html">About Us</a>
+        <a href="ServicesPage.html">Our Services</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Contact Header -->
+<section class="contact-hero">
+  <div class="contact-hero-overlay"></div>
+  <div class="contact-hero-content" data-aos="fade-down">
+    <h1>Contact Us</h1>
+  </div>
+</section>
+
+<!-- Contact Details -->
+<section class="contact-details" data-aos="fade-up">
+  <h2>Contact Details</h2>
+  <p>Whether you’re curious about our services, pricing, or anything in between, our team is always here to provide the answers you need.</p>
+
+  <div class="contact-boxes">
+    <div class="box green" data-aos="fade-right" data-aos-delay="100">
+      <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Clock Icon" class="box-icon" />
+      <h3>Emergency Work</h3>
+      <p class="number">+971 55 222 6721</p>
+      <a href="https://wa.me/971552226721" target="_blank">
+        <button>Call on WhatsApp</button>
+      </a>
+    </div>
+
+    <div class="box dark" data-aos="zoom-in" data-aos-delay="200">
+      <h3><center>Main Branch</center></h3>
+      <p><strong>Address:</strong><br />Office no# 206, RKM Building,<br />Hor al Anz East, Abu Hail, Dubai, UAE</p>
+      <p><strong>Phone:</strong><br />+971 50 866 3123</p>
+      <p><strong>Mail:</strong><br /><a href="mailto:info@docksidetechnical.com">info@docksidetechnical.com</a></p>
+    </div>
+
+    <div class="box green" data-aos="fade-left" data-aos-delay="300">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Profile Icon" class="box-icon" />
+      <h3>You Have A Question?</h3>
+      <p class="number">+971 50 866 3123</p>
+      <a href="https://wa.me/971508663123" target="_blank">
+        <button>Contact on WhatsApp</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Keep in Touch -->
+  <section class="keep-in-touch" data-aos="fade-up">
+    <h2>Let's Keep In Touch</h2>
+    <p>For reliable maintenance support and expert service, don’t hesitate to reach out. Just a call or click is all it takes to get started!</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section" data-aos="fade-up">
+    <h2 class="form-heading">Contact Form</h2>
+
+    <div class="form-container">
+      <div class="form-left">
+        <input type="text" placeholder="Your Name" />
+        <input type="tel" placeholder="Your Phone Number" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="6" placeholder="Your Message"></textarea>
+        <div class="form-buttons">
+          <button type="submit">Submit</button>
+          <button type="button" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Dubai', '_blank')">Get Directions</button>
+        </div>
+      </div>
+
+      <div class="form-right">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Contact Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map Section -->
+  <section class="location-map" data-aos="fade-up">
+    <h2>Our Location</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.573440238825!2d55.27077931492979!3d25.204849583917897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4349eb16e0af%3A0xe3ebd343ed1b30a4!2sDubai%20UAE!5e0!3m2!1sen!2sin!4v1686503980242!5m2!1sen!2sin"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Dockside Technical Services. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="AboutusPage.html">About</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/971508663123"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
